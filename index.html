@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>KevinKaske.com - Design Portfolio</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="slimbox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="popup.css" type="text/css" media="screen" />
+<script type="text/javascript" src="includes/jquery-1.2.6.js"></script>
+<script type="text/javascript" src="includes/jquery.ui.all.js"></script>
+<script type="text/javascript" src="includes/motionpack1.js"></script>
+<script type="text/javascript" src="includes/smooth.pack.js"></script>
+<script type="text/javascript" src="includes/jquery.corner.js"></script>
+<script type="text/javascript" src="includes/jquery-impromptu.2.3.js"></script>
+<script type="text/javascript">
+	function SubmittedSuccess(){
+		toggleSlide('about');
+		document.getElementById('name').value = '';
+		document.getElementById('email').value = '';
+		document.getElementById('text').value = '';
+		
+		$.prompt('Thanks for your feedback. I will get back in touch with you in a timely manor.');
+	}
+</script>
+</head>
+<body>
+<a href="#" name="gototop" id="gototop"></a>
+<div id="about" style="display:none; overflow: hidden; height: 360px;">
+<h2>Kevin Kaske</h2>
+	<img class="imgLFT" src="images/abstract.jpg" alt=" " />
+	<div id="info">
+		<p>I'm a freelance designer available for hire. I have produced works in the following areas: </p>
+		<ul>
+			<li>Promotional Materials (posters, flyers, newspaper ads, etc.)</li>
+			<li>Identity Resources (logos, slogans)</li>
+			<li>Media Packaging (cd and dvd covers)</li>
+			<li>Web Application Development (ruby on rails)</li>
+		</ul>
+		<p>
+			For more information on how I might help you with your next project, contact me.<br />
+			<br />
+			1-507-202-5441<br />
+			kevinkaske@gmail.com
+		</p>
+	</div>
+	<div id="contact">
+		<form action="contactpost.php" method="post" name="contactform" target="contactframe" id="contactform">
+			<label>Name</label>
+			<input name="name" id="name" type="text" size="30" />
+			<label>Email</label>
+			<input name="email" id="email" type="text" size="30" />
+			<label>Message</label>
+			<textarea name="text" id="text" cols="23" rows="5"></textarea>
+			<input class="submit" name="send" type="submit" value="send" />
+		</form>
+	</div>
+	<p class="close"> <a href="javascript:;" onmousedown="toggleSlide('about');"><span>Close</span></a> </p>
+</div>
+
+<div id="wrapper">
+	<div id="wrapper2">
+		<div id="container" class="clearfix">
+			<div id="header">
+				<div id="nav">
+					<a href="javascript:;" onmousedown="toggleSlide('about');">
+						<img src="images/contact.png" alt="contact me" />
+					</a>
+				</div>
+			</div>
+			<img src="images/examples.png" alt="examples of my work" />
+			<div class="thumbBox">
+				<h2>Event Poster</h2>
+				<a href="javascript:;" onmousedown="toggleSlide('boxA');">
+					<img src="images/portfolio/eventSM.png" alt="Event Poster" />
+				</a>
+				<div id="boxA" style="display:none; overflow: hidden; height: 820px;"><img src="images/portfolio/poster1.png" alt="NitroGEN Praise Poster" /><br />
+					<img src="images/portfolio/poster2.png" alt="NitroGEN Praise Poster" />
+					<h3>Event Posters</h3>
+					<p>I have worked on event posters for promoting special events. I have also helped with marketing campaigns.</p>
+					<a class="closeThumb" href="javascript:;" onmousedown="toggleSlide('boxA');"><span>close</span></a> </div>
+			</div>
+			<div class="thumbBox"><h2>Logo Design</h2><a href="javascript:;" onmousedown="toggleSlide('boxB');"><img src="images/portfolio/logosSM.png" alt="Logo Design" /></a>
+				<div id="boxB" style="display:none; overflow: hidden; height: 395px;"><img src="images/portfolio/logo1.png" alt="mumbeeApps.com Logo" /><br />
+					<img src="images/portfolio/logo2.png" alt="Rochester Pentecostal Church Logo" /><br />
+					<img src="images/portfolio/logo3.png" alt="NitroGEN Logo" />
+					<h3>Logo Design</h3>
+					<p>I have designed logos for several organizations and special events.</p>
+					<a class="closeThumb" href="javascript:;" onmousedown="toggleSlide('boxB');"><span>close</span></a>
+				</div>
+			</div>
+			<div class="thumbBox"><h2>DVD &amp; CD Design</h2><a href="javascript:;" onmousedown="toggleSlide('boxC');"><img src="images/portfolio/cdSM.png" alt="DVD &amp; CD Design" /></a>
+				<div id="boxC" style="display:none; overflow: hidden; height: 1000px;"><img src="images/portfolio/cd-cover1.png" alt="NitroGEN Praise Project 2" /><br />
+					<img src="images/portfolio/cd-cover2.png" alt="Indiana Bible College - Changing Times" />
+					<h3>CD &amp; DVD Cover Design</h3>
+					<p>I'm available to design cd and dvd covers.</p>
+					<a class="closeThumb" href="javascript:;" onmousedown="toggleSlide('boxC');"><span>close</span></a>
+				</div>
+			</div>
+	</div>
+</div>
+<div id="footer"> <a id="top" href="#gototop"><span>Back to Top</span></a></div>
+<div id="subfooter">&copy;2009 All Rights Reserved - Kevin Kaske</div>
+<iframe name="contactframe" id="contactframe" style="display: hidden;" height="0" width="0"></iframe>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7993121-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

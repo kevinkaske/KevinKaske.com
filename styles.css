@@ -1,0 +1,291 @@
+@charset "utf-8";
+/* Begin CSS Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+/* End CSS Reset */
+
+
+	
+body {
+	background-color:#000000
+	}
+	
+p	{	
+	font-size:12px;
+	line-height:18px;
+	padding:4px 0 10px;
+	}
+	
+h1,h2,h3,h4,h5,h6 {
+	font-family:"Trebuchet MS", Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	}
+	
+h2 {
+	font-size:18px;
+	}
+	
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.clearfix {
+	display:inline-block;
+	_height: 1%;
+}
+
+.clearfix {
+	display:block;
+}
+
+.imgLFT {
+	float:left;
+	margin:10px 15px 10px 0;
+	}
+	
+#wrapper {
+	width:100%;
+	background:url(images/bgTile.jpg) center top repeat-y;
+	}
+	
+#wrapper2 {
+	width:100%;
+	background:url(images/mainBG.jpg) no-repeat center top;
+	text-align:center
+	}
+
+/***********************
+//  Dropdown Div Styles
+************************/	
+#about {
+	width:720px;
+	padding-top:30px;
+	margin:0 auto;
+	color:#CCCCCC;
+	position:relative;
+	}
+	
+#about h2 {
+	font-size:24px;
+	}
+	
+#about a {
+	color:#999999;
+	}
+	
+#about a:hover {
+	color:#CDDD0B;
+	}
+	
+#about ul {
+	margin-left:30px;
+	list-style: square;
+	font-size:12px;
+	font-weight:normal;
+	}
+	
+#about ul li {
+	padding:6px 0 
+	}
+	
+#info {
+	margin-left:150px;
+	width:300px;
+	font-family:Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	}	
+	
+/************************
+// Contact Form Styles
+***********************/	
+
+#contact {
+	position:absolute;
+	left: 481px;
+	top: 60px;
+	font-family:Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	} 
+
+form {
+	font-size:12px;
+	}
+	
+label {
+	display:block;
+	color: #CCCCCC
+	font-family:Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	}
+
+textarea, input {
+	background-color:#5c5c5c;
+	border:1px solid #666666;
+	color:#FFFFFF;
+	margin-bottom:10px
+	}
+	
+input.submit {
+	padding:0 6px;
+	color:#cccccc;
+	cursor:pointer
+	}
+	
+/**************************
+// Close Button
+*************************/
+	
+p.close a {
+	display:block;
+	width:27px;
+	height:27px;
+	background:url(images/arrow.jpg) no-repeat center top;
+	}
+	
+p.close a:hover {
+	background:url(images/arrow.jpg) no-repeat center bottom;
+	}
+	
+p.close a span {
+	margin-left:-9999px;
+	}
+
+#header {
+	position:relative;
+	height:180px;
+	margin-bottom:30px
+	}
+
+/*******************
+// Thumbnails
+*******************/
+	
+#container {
+	position:relative;
+	width:444px;
+	margin:0 auto;
+	text-align:left;
+	}
+	
+#container .thumbBox {
+	margin-bottom:30px;
+	font-family:Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	}
+	
+#container .thumbBox span {
+	font-size:18px;
+	font-weight:normal;
+	}
+	
+#container .thumbBox h3 {
+	font-size:20px;
+	}
+	
+#container .thumbBox a img {
+	border:2px solid #2E1200;
+	margin:6px 0 0;
+	padding:2px;
+	background:#2E1200
+	}
+	
+#container .thumbBox a img:hover {
+	background:#ffffff
+	}
+	
+#container .thumbBox div img {
+	border:2px solid #2E1200;
+	margin:10px 0 6px
+	}
+	
+#container .thumbBox div a.closeThumb {
+	display:block;
+	float:right;
+	width:60px;
+	height:18px;
+	background:url(images/close.jpg) no-repeat center top;
+	margin-top:-4px
+	}
+	
+#container .thumbBox div a.closeThumb:hover {
+	background:url(images/close.jpg) no-repeat center bottom;
+	}
+	
+#container .thumbBox div a.closeThumb span {
+	margin-left:-9999px;
+	}
+
+#container .visit {
+	display:block;
+	float:right;
+	text-align:right;
+	}	
+	
+#container .visit a {
+	color:#2E1200;
+	font-size:12px;
+	}
+	
+/*****************************
+// Footers and 'Back to Top'
+*****************************/
+#footer {
+	clear:both;
+	height:130px;
+	padding-top:11px;
+	position:relative;
+	background:url(images/footerBG.jpg) no-repeat center top #000;
+	}	
+
+a#top	{
+	display:block;
+	background:url(images/backtotop.jpg) no-repeat;
+	width:145px;
+	height:39px;
+	margin:0 auto;
+	}
+	
+a#top span {
+	margin-left:-9999px;
+	}
+	
+#subfooter {
+	font-family:Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	background-color:#000000;
+	height:30px;
+	color:#333333;
+	text-align:center;
+	font-size:12px;
+	padding-top:70px
+	}
+	
+/*************************
+// Dropdown Div Link
+**************************/	
+
+#nav {
+	position:absolute;
+	height:73px;
+	width:103px;
+	left: 300px;
+	top: 90px;
+	text-align:right
+	}
+	
+#nav a {
+	margin:0 0 14px 0;
+	padding:3px 0 0 0;
+	float:none;
+	border:0;
+	background-color:transparent;
+	text-decoration:none;
+	font-family:Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	color:#644d3e;
+	font-weight:normal;
+	font-style:italic;
+	line-height:1.3em;
+	font-size:18px
+	}	
+	
+#nav a:hover {
+	color:#000000
+	}
+	

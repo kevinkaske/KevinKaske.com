@@ -1,0 +1,344 @@
+@import url('reset.css');
+@import url('text.css');
+@import url('960.css');
+@import url('sifr.css');
+
+/* @group General Styling */
+
+body {
+background: #202020;
+color: #c0c0c0;
+padding-top: 40px;
+}
+
+.topfade
+{
+	
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	background: url(../img/top_bg.png) repeat-x;
+	top: 0;
+}
+
+.bottomfade
+{
+	
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	background: url(../img/bottom_bg.png) repeat-x;
+	bottom: 0;
+}
+
+a {
+display: block;
+color: #73cedf;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+color: #a4e3ec;
+}
+
+#sidebar {
+	position: fixed;
+	width: 140px;
+}
+
+/* Site Logo */
+h1.logo {
+background: url(../img/logo.png) no-repeat;
+height: 84px;
+width: 140px;
+}
+
+/* Site Logo Link Styling*/
+h1.logo a {
+height: 84px;
+width: 140px;
+display: block;
+text-indent: -9999px;
+}
+
+/* Site Logo Hover Effect*/
+h1.logo:hover {
+opacity: 0.90;
+}
+
+
+img {
+margin-bottom: 0px;
+}
+
+img:hover {
+opacity: 0.75;
+}
+
+
+#map{
+	margin-top: 20px;
+	border: 1px solid #bab9ae;
+	width:300px;
+	height:300px
+}
+
+/* Class for Titles of portfolio pieces, that are not links (eg printed items) */
+
+.title {
+color: #25bdd5;
+margin-bottom: 10px;
+display: block;
+}
+
+/* Portfolio Project Title Links */
+a.project {
+margin-bottom: 10px;
+}
+
+/* @end */
+
+
+/* @group Navigation */
+
+/* Navigation Buttons */
+ul.navigation li a:active {
+opacity: 0.50;
+}
+
+
+.button_home {
+width: 110px;
+height: 18px;
+display: block;
+background: url(../img/nav_bg.png) no-repeat;
+padding-left: 30px;
+color: #000;
+padding-top: 2px;
+margin-bottom: 10px;
+text-shadow: none;
+}
+
+.button_web {
+width: 110px;
+height: 18px;
+display: block;
+background: url(../img/nav_bg.png) no-repeat 0 -20px;
+padding-left: 30px;
+color: #000;
+padding-top: 2px;
+margin-bottom: 10px;
+text-shadow: none;
+}
+
+.button_contact {
+width: 110px;
+height: 18px;
+display: block;
+background: url(../img/nav_bg.png) no-repeat 0 -60px;
+padding-left: 30px;
+color: #000;
+padding-top: 2px;
+margin-bottom: 10px;
+text-shadow: none;
+}
+
+
+.button_visit {
+width: 110px;
+height: 18px;
+display: inline-block;
+background: url(../img/nav_bg.png) no-repeat 0 -100px;
+padding-left: 30px;
+color: #000;
+padding-top: 2px;
+margin-bottom: 10px;
+text-shadow: none;
+}
+
+
+.button_next {
+width: 110px;
+height: 18px;
+display: inline-block;
+background: url(../img/nav_bg.png) no-repeat 0 -120px;
+padding-left: 30px;
+color: #000;
+padding-top: 2px;
+margin-bottom: 10px;
+text-shadow: none;
+}
+
+/* Navigation Hover State */
+.button_home:hover {
+background: url(../img/nav_bg.png) no-repeat -140px 0;
+text-decoration: none;
+color: #000;
+}
+
+.button_web:hover {
+background: url(../img/nav_bg.png) no-repeat -140px -20px;
+text-decoration: none;
+color: #000;
+}
+
+.button_print:hover {
+background: url(../img/nav_bg.png) no-repeat -140px -40px;
+text-decoration: none;
+color: #000;
+}
+
+.button_contact:hover {
+background: url(../img/nav_bg.png) no-repeat -140px -60px;
+text-decoration: none;
+color: #000;
+}
+
+.button_visit:hover {
+background: url(../img/nav_bg.png) no-repeat -140px -100px;
+text-decoration: none;
+color: #000;
+}
+
+.button_next:hover {
+background: url(../img/nav_bg.png) no-repeat -140px -120px;
+text-decoration: none;
+color: #000;
+}
+
+/* @end */
+
+/* @group UL for Portfolio Description */
+
+/* Unordered List for portfolio piece features */
+ul {
+list-style-type: none;
+margin-top: 10px;
+margin-bottom: 20px;
+
+}
+
+ul li.ux {
+background: url(../img/desc_icons.png) no-repeat 0 3px;
+padding-left: 12px;
+height: 12px;
+margin-bottom: 5px;
+}
+
+ul li.frontend {
+background: url(../img/desc_icons.png) no-repeat 0 -10px;
+padding-left: 12px;
+margin-bottom: 5px;
+height: 12px;
+}
+
+ul li.html {
+background: url(../img/desc_icons.png) no-repeat 0 -23px;
+padding-left: 12px;
+height: 12px;
+margin-bottom: 5px;
+}
+
+ul li.tick {
+background: url(../img/desc_icons.png) no-repeat 0 -35px;
+padding-left: 12px;
+height: 12px;
+margin-bottom: 5px;
+}
+
+ul.contact {
+margin-top: 23px;
+}
+
+ul.contact li {
+margin-top: 20px;
+}
+/* @end */
+
+/* @group Footer */
+
+.footerleft {
+padding-left: 20px;
+color: #000;
+padding-bottom: 12px;
+background: url(../img/footer_bg.png) no-repeat;
+padding-top: 2px;
+width: 310px;
+float: left;
+text-shadow: none;
+}
+
+.footerleft a {
+display: inline;
+color: #000;
+}
+
+.footerright a {
+display: inline;
+color: #000;
+}
+
+.footerright {
+padding-right: 20px;
+color: #000;
+padding-bottom: 12px;
+background: url(../img/footer_bg.png) no-repeat -330px 0;
+width: 270px;
+float: right;
+text-align: right;
+padding-top: 2px;
+text-shadow: none;
+}
+
+/* @end */
+
+/* @group Form Styling */
+
+/* Form Button */
+.button {
+width: 140px;
+height: 20px;
+display: block;
+background: url(../img/nav_bg.png) no-repeat 0 -80px;
+color: #000;
+padding-left: 30px;
+margin-bottom: 20px;
+text-shadow: none;
+border-style: none;
+text-align: left;
+}
+
+/* Form Button Hover State */
+.button:hover {
+background: url(../img/nav_bg.png) no-repeat -140px -80px;
+text-decoration: none;
+color: #000;
+}
+
+/* Form Input Styling */
+input {
+color: #808080;
+background: #000000;
+display: block;
+height: 20px;
+width: 300px;
+border: 1px solid #c0c0c0;
+}
+
+textarea {
+width: 300px;
+height: 200px;
+border: 1px solid #c0c0c0;
+color: #808080;
+background: #000000;
+}
+
+.submit input
+{
+color: #808080;
+background: #000000;
+border: 1px solid #c0c0c0;
+}
+
+/* @end */

@@ -1,0 +1,97 @@
+.jcarousel-skin-tango .jcarousel-container {
+
+	width: 260px;
+
+}
+
+
+.jcarousel-skin-tango .jcarousel-container-vertical {
+    width: 260px;
+    height: 294px;
+    padding: 0 0 45px 0;
+
+}
+
+.jcarousel-skin-tango .jcarousel-clip-vertical {
+    width:  260px;
+    height: 294px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 252px;
+    height: 80px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 252px;
+    height: 80px;
+	border: 1px #bbb solid;
+	padding: 3px;
+
+}
+
+.jcarousel-skin-tango .jcarousel-item a img {
+	border: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Vertical Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-vertical {
+    position: absolute;
+    bottom: 0px;
+    left: 212px;
+    width: 48px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent url(../images/next-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-vertical:hover {
+    background-position: 0 -40px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-vertical:active {
+    background-position: 0 -80px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical,
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical:hover,
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical:active {
+    cursor: default;
+    background-position: 0 -120px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-vertical {
+    position: absolute;
+    bottom: 0px;
+    left: 154px;
+    width: 48px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent url(../images/prev-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-vertical:hover {
+    background-position: 0 -40px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-vertical:active {
+    background-position: 0 -80px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical,
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:active {
+    cursor: default;
+    background-position: 0 -120px;
+}

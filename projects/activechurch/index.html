@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> - </title>
+<link rel="stylesheet" href="stylesheets/promo-screen.css" type="text/css" media="screen, projection"/>
+<link rel="stylesheet" href="stylesheets/promo-print.css" type="text/css" media="print"/>
+<link rel="stylesheet" href="stylesheets/promo-grid.css" type="text/css" media="screen, projection"/>
+<link rel="stylesheet" id="defaultStyle" href="stylesheets/promo-style.css" type="text/css" media="screen, projection" />
+<!--[if IE]>
+  <link rel="stylesheet" href="/stylesheets/promo-ie.css" type="text/css" media="screen, projection"/>
+<![endif]-->
+<script type="text/javascript" src="javascripts/jquery.js"></script>
+<script type="text/javascript" src="javascripts/jquery-ui.js"></script>
+<script type="text/javascript" src="javascripts/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('HTML').addClass('JS');
+	
+	$("#tabs").tabs();
+	
+	//used to give all tabs the same height
+	var maxHeight=0;
+	$("#tabs div").each(function(){
+		var myDiv=$(this);
+		var isHidden=false;
+		if(myDiv.hasClass("ui-tabs-hide")){
+			isHidden=true;
+			myDiv.removeClass("ui-tabs-hide");
+		}
+		if((myHeight=myDiv.height())>maxHeight){
+			maxHeight=myHeight;	
+		}else{
+			myDiv.height(maxHeight);	
+		}
+		if(isHidden){
+			myDiv.addClass("ui-tabs-hide");
+		}
+	});
+	
+	$("#slide").cycle({
+		fx: 		'fade',
+		speed:		'1500',
+		timeout: 	'4000'
+	});
+});
+</script>
+ 
+<!--[if lt IE 7]>
+ <link rel="stylesheet" href="css/style_ie6.css" type="text/css" media="screen, projection"/>
+<script src="js/DD_belatedPNG_0.0.7a-min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    DD_belatedPNG.fix('.ui-tabs, .ui-tabs-nav, .ui-tabs-nav li,.ui-tabs-nav li a,#slide-wrapper .inner, .button, .testimonial, .testimonial .inner, .feature-list img, .download ');
+    
+    $(".ui-tabs-nav li a").click(function(){
+        DD_belatedPNG.fix('.ui-tabs-nav li,.ui-tabs-nav li a');
+    });
+
+});
+</script>
+<![endif]-->
+</head>
+<body id="home">
+<div class="header">
+  <div class="container">
+   <h1><a href="home.html" title="Back to home"><img src="images/logo-small.png"></a></h1>
+   <div id="nav">
+      <ul>
+        <li class="first current"><a href="home.html" title="Home">Home</a></li>
+        <li><a href="tour.html" title="tour">Tour</a></li>
+        <li><a href="blog.html"  title="blog">Blog</a></li>
+        <li><a href="blog.html"  title="support">Support</a></li>
+        <li><a href="blog.html"  title="pricing and signup">Pricing &amp; Signup</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- *************** content *************** -->
+<div id="page">
+  <div class="wrapper">
+    <div class="container">
+      <div class="span-12 col1">
+        <div id="tagline">
+          <img src="images/pl_slogan.png" alt="" />
+        </div>
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1"><span>customers</span></a></li>
+            <li><a href="#tabs-2"><span>features</span></a></li>
+            <li class="green-tab"><a href="#tabs-4"><span>Plans and Pricing</span></a></li>
+          </ul>
+          <div id="tabs-1" class="features-block">
+            <ul class="feature-list">
+              <li> <img src="images/iconeden_financial/41_48x48.png" alt="" />
+                <h4>Scalable architecture</h4>
+                <p>Donec nec justo eget felis facilisis fermentum sit amet orci.</p>
+              </li>
+              <li class="last"> <img src="images/iconeden_financial/02_48x48.png" alt="" />
+                <h4>Expense tracking</h4>
+                <p>Donec nec justo eget felis facilisis fermentum sit amet orci.</p>
+              </li>
+              <li> <img src="images/iconeden_financial/25_48x48.png" alt="" />
+                <h4>Skinnable interface</h4>
+                <p>Donec nec justo eget felis facilisis fermentum sit amet orci.</p>
+              </li>
+              <li class="last"> <img src="images/iconeden_financial/55_48x48.png" alt="" />
+                <h4>Real-Time Statistics</h4>
+                <p>Donec nec justo eget felis facilisis fermentum sit amet orci.</p>
+              </li>
+              <li> <img src="images/iconeden_financial/53_48x48.png" alt="" />
+                <h4>Address book</h4>
+                <p>Donec nec justo eget felis facilisis fermentum sit amet orci.</p>
+              </li>
+              <li class="last"> <img src="images/iconeden_financial/18_48x48.png" alt="" />
+                <h4>Custom widgets</h4>
+                <p>Donec nec justo eget felis facilisis fermentum sit amet orci.</p>
+              </li>
+            </ul>
+          </div>
+          <div id="tabs-2">
+          <ul class="feature-list clearfix">
+            <li> <img src="images/iconeden_financial/16_48x48.png" alt="" />
+                <h4>Value Plan</h4>
+                <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.<br/>
+                <a href="#value" title="Value Plan">learn more...</a></p>
+              </li>
+              <li class="last"> <img src="images/iconeden_financial/04_48x48.png" alt="" />
+                <h4>Medium Plan</h4>
+                <p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.<br/>
+                <a href="#medium" title="Medium Plan">learn more...</a></p>
+              </li>
+              <li> <img src="images/iconeden_financial/23_48x48.png" alt="" />
+                <h4>Premium Plan</h4>
+                <p>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.<br/>
+                <a href="#premium" title="Premium Plan">learn more...</a></p>
+              </li>
+              </ul>
+          </div>
+          <div id="tabs-4">
+        
+                <h4>Download now</h4>
+                <p>Donec nec justo eget felis facilisis fermentum sit amet orci. Donec nec justo eget felis facilisis fermentum sit amet orci.
+                <br/>
+                <a href="#download" title="download">Download latest version</a>
+                </p>
+        
+          </div>
+        </div>
+      </div>
+      <div class="span-12 col2 last">
+        <div id="slide-wrapper">
+          <div class="inner">
+            <div id="slide"><img src="images/pl_screen1.jpg" alt="" /> <img src="images/pl_screen2.jpg" alt="" /> <img src="images/pl_screen3.jpg" alt="" /></div>
+          </div>
+        </div>
+        <div id="cta" class="clearfix button-row"><a href="#" class="button"><span>take the tour</span></a> <a href="#" class="button green-button last"><span>free 30 day trial</span></a></div>
+        <div id="testimonials">
+<div class="testimonial"><div class="inner">
+        <cite>This is the greatest thing since sliced bread!</cite>
+        </div><h6>Pastor Steve, Revival Church</h6></div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- *************** footer *************** -->
+<div class="footer">
+  <div class="container"><div class="span-24 content"><p>Copyright 2009 ematoda creative, LLC. All rights reserved.</p></div> </div>
+</div>
+</body>
+</html>
